@@ -1,8 +1,9 @@
 
 # R-S-MXO4-realtime-histogram
 
-This is a python script which can grab data from R&S MXO4 scope to draw histogram of a measured parameter with pyplot.
-The parameter can be changed in script at line 20  "... meas_type=MeasType.FREQuency".
+This is a python script which can grab data from R&S MXO4 scope to draw histogram of a measured parameter with pyplot and seaborn.
+It is a bit slow-ish, maybe I can found a better solution in the future. But this is a temporary solution until R&S introduce this function into the firmware. Until now (FW. ver 2.8.2.0) it is not available as far as I know.
+The measurement can be changed in script at line 20  "... meas_type=MeasType.FREQuency".
 The list of measurements of amplitude/time can be found in user manual (page 1005):
 HIGH | LOW | AMPLitude | MAXimum | MINimum | PDELta |
 MEAN | RMS | STDDev | CRESt | POVershoot | NOVershoot |
