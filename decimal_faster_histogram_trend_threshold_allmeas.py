@@ -93,8 +93,8 @@ def update(frame):
             # Update Histogramă
             ax_hist.clear()
             ax_hist.hist(data, bins=50, color='skyblue', edgecolor='black', alpha=0.7)
-            ax_hist.set_title(f"Parametru: {current_meas_type}\n"
-                             f"Min: {np.min(data):.4f} | Mean: {np.mean(data):.4f} | Max: {np.max(data):.4f}")
+            ax_hist.set_title(f"Parameter: {current_meas_type}\n"
+                             f"Min: {np.min(data):.9f} | Mean: {np.mean(data):.9f} | Max: {np.max(data):.9f}")
             
             # Aplicare format zecimal pe axa X a histogramei
             ax_hist.xaxis.set_major_formatter(decimal_formatter)
@@ -111,13 +111,14 @@ def update(frame):
                 
                 if last_std > threshold_value:
                     ax_trend.set_facecolor('#ffcccc')
-                    ax_trend.set_title(f"⚠️ INSTABILITATE: {last_std:.4f}", color='darkred', fontweight='bold')
+                    #ax_trend.set_title(f"⚠️ OverLine!: {last_std:.4f}", color='darkred', fontweight='bold')
+                    ax_trend.set_title(f"Track {current_meas_type} ({last_std:.4f})")
                 else:
                     ax_trend.set_facecolor('#f9f9f9')
-                    ax_trend.set_title(f"Evoluție Deviație Standard ({last_std:.4f})")
+                    ax_trend.set_title(f"Track {current_meas_type} ({last_std:.4f})")
 
                 ax_trend.set_ylim(0, max(threshold_value * 1.2, max(std_history) * 1.1) if std_history else 1)
-                ax_trend.grid(True, linestyle=':', alpha=0.4)
+                ax_trend.grid(True, linestyle=':', alpha=0.0000005)
                 
     except Exception: pass
     return []
