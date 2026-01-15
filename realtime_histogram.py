@@ -42,13 +42,13 @@ def update(frame):
         
         if len(data) > 1:
             ax.clear()
-            sns.histplot(data, bins=100, kde=False, ax=ax, color='blue', edgecolor='black')
+            sns.histplot(data, bins=700, kde=False, ax=ax, color='skyblue', edgecolor='black')
             ax.set_title(f"Live Histogram: Standard Deviation\nSamples: {len(data)} | Mean: {np.mean(data):.6f} V")
             ax.set_xlabel("Standard Deviation (V)")
             ax.set_ylabel("Frequency")
             
     except Exception as e:
-        print(f"Eroare: {e}")
+        print(f"Error: {e}")
 
 
 ani = FuncAnimation(fig, update, interval=1, cache_frame_data=True)
@@ -62,3 +62,4 @@ finally:
     print("Close sesion...")
 
     mxo.close()
+
