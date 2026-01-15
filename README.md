@@ -1,3 +1,4 @@
+
 # R-S-MXO4-realtime-histogram
 
 This is a python script which can grab data from R&S MXO4 scope to draw histogram of a measured parameter with pyplot.
@@ -11,3 +12,6 @@ AREA | RTIMe | FTIMe | PPULse | NPULse | PERiod | FREQuency
 | CPDelta | PULCnt | DELay | PHASe | BWIDth | EDGecount
 | SETup | HOLD | SHT | SHR | DTOTrigger | SLERising |
 SLEFalling
+
+
+<img width="989" height="628" alt="Screenshot 2026-01-15 154108" src="https://github.com/user-attachments/assets/bc6fc33c-dc98-4517-9fe0-246ee2192a6b" />
