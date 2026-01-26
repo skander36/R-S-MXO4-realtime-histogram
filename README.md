@@ -15,7 +15,7 @@ AREA | RTIMe | FTIMe | PPULse | NPULse | PERiod | FREQuency
 SLEFalling
 Not all measures are useful to be histogramed, sa one cand delete from them at line 28.
 Also the ip address must be chnaged on line 10.
-An AI improved code - faster (did not wait for OPC) with trackin window.
+Below, an AI improved code - faster (did not wait for OPC) with trackin window.
 
 <img width="989" height="628" alt="Screenshot 2026-01-15 154108" src="https://github.com/user-attachments/assets/bc6fc33c-dc98-4517-9fe0-246ee2192a6b" />
 
