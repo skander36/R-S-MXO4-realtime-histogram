@@ -1,5 +1,5 @@
 
-# R-S-MXO4-realtime-histogram
+# R&S-MXO4-realtime-histogram
 
 This is a python script which can grab data from R&S MXO4 scope to draw histogram of a measured parameter with pyplot and seaborn.
 It is a bit slow-ish, maybe I can found a better solution in the future. But this is a temporary solution until R&S introduce this function into the firmware. Until now (FW. ver 2.8.2.0) it is not available as far as I know.
