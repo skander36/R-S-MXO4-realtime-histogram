@@ -16,8 +16,10 @@ SLEFalling
 Not all measures are useful to be histogramed, sa one cand delete from them at line 28.
 Also the ip address must be changed on line 10.
 Below, an AI improved code - faster (did not wait for OPC) with tracking window.
+Added a PyQT remote console at its basics.
 
 <img width="989" height="628" alt="Screenshot 2026-01-15 154108" src="https://github.com/user-attachments/assets/bc6fc33c-dc98-4517-9fe0-246ee2192a6b" />
 
 
 <img width="1394" height="892" alt="IA version" src="https://github.com/user-attachments/assets/f9e13cc4-07fc-4eba-baa8-308156ad4d1d" />
+<img width="1404" height="939" alt="MXO4 Remote PyQT" src="https://github.com/user-attachments/assets/a0e4ad9c-3dbb-479c-ba88-bcc8b5ec9e71" />
